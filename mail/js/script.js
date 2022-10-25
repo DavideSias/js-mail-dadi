@@ -21,9 +21,9 @@ check.addEventListener('click', function(){
     const yourMail = document.getElementById('your-mail');
 
     if (arrMail.includes(eleMail)){
-        yourMail.innerHTML = `Ciao ${eleMail} la mail è corretta puoi entrare`;
+        yourMail.innerHTML = `Ciao ${eleMail} la mail è corretta puoi entrare.`;
     } else {
-        yourMail.innerHTML = 'La mail non è corretta, riprovare';
+        yourMail.innerHTML = `Ciao ${eleMail} la mail non è presente nel nostro sistema, riprovare.`;
     }
 }
 )
