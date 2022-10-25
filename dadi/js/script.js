@@ -12,17 +12,13 @@ start.addEventListener('click', function(){
     const numBot = Math.floor(Math.random() * 6) +1;
 
     if(numUser > numBot){
-        console.log(numUser);
-        console.log(numBot);
-        console.log('hai vinto');
+        document.querySelector('.result').innerHTML = 'hai vinto';
     } else if (numUser == numBot) {
-        console.log(numUser);
-        console.log(numBot);
-        console.log ('pareggio');
+        document.querySelector('.result').innerHTML = 'pareggio';
     } else {
-        console.log(numUser);
-        console.log(numBot);
-        console.log ('hai perso');
+        document.querySelector('.result').innerHTML = 'hai perso';
     }
 
+    document.querySelector('.num-user').innerHTML = numUser;
+    document.querySelector('.num-bot').innerHTML = numBot;
 })
